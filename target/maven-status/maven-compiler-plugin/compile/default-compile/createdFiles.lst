@@ -1,0 +1,4 @@
+com/swagger/config/SwaggerConfig.class
+com/swagger/controller/TaskController.class
+com/swagger/Application.class
+com/swagger/model/Task.class
