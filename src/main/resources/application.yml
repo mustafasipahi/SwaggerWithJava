@@ -1,0 +1,5 @@
+springdoc:
+  packagesToScan: com.swagger
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui

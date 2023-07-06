@@ -1,24 +1,24 @@
 package com.swagger.model;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
+import org.springframework.lang.Nullable;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Data
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@ApiModel(value = "First Entity Value", description = "First Entity Description")
 public class Task {
 
-    @ApiModelProperty(value = "Task Id")
+    @Nullable
     private Long id;
 
-    @ApiModelProperty(value = "Task Name")
+    @Size(min = 0, max = 20)
     private String name;
 
-    @ApiModelProperty(value = "Task Create Date")
+    @NotNull
     private Date createDate;
 }
